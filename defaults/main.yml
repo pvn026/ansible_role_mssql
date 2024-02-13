@@ -1,0 +1,13 @@
+---
+psmodules:
+  - SQLServerDsc
+  - StorageDsc
+  - ServerManager
+  - dbatools
+  - vNetworking
+  - Net-Framework-Core
+
+features:
+  - NET-Framework-Features
+  - NET-Framework-45-Features
+  - WAS

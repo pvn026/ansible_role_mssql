@@ -1,0 +1,15 @@
+---
+- block:
+    #Load required powershell modules
+    - name: Powershell | check for SQLServer DSC Powershell module
+      win_psmodule:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ psmodules }}"
+    #setup sql server prerequs
+    - name: windows | install .NET Framework 3.5
+      win_feature:
+        name: "{{ item }}"
+        state: present
+        include sub_features: True
+      loop: "{{ features }}"  

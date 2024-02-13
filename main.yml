@@ -1,0 +1,6 @@
+---
+-name: install mssql on windows
+ hosts: localhost
+ tasks: 
+   -include_role: 
+      name: install-mssql-windows
