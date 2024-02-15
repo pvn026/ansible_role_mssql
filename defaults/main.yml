@@ -1,7 +1,6 @@
 ---
 psmodules:
   - SQLServerDsc
-  - StorageDsc
   - ServerManager
   - dbatools
   - vNetworking
